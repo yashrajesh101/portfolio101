@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Glowing Button */
+.btn-glow {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(255, 81, 47, 0.8);
+    text-decoration: none;
+}
+
+.btn-glow:hover {
+    box-shadow: 0px 0px 20px rgba(255, 81, 47, 1);
+    background: linear-gradient(90deg, #dd2476, #ff512f);
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Adding Animations to Elements */
+.animate-fade-in {
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slide-up 1s ease-out;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #6b6bfa, #81f5ff);
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Contact Form Styles */
+form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
